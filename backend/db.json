@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Geladeira Consul",
+      "price": 3000
+    },
+    {
+      "id": 2,
+      "name": "PS5",
+      "price": 8000
+    }
+  ]
+}
