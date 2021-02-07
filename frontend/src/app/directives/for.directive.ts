@@ -3,11 +3,11 @@ import {
   Input,
   OnInit,
   TemplateRef,
-  ViewContainerRef
+  ViewContainerRef,
 } from '@angular/core';
 
 @Directive({
-  selector: '[myFor]'
+  selector: '[myFor]',
 })
 export class ForDirective implements OnInit {
   @Input('myForEm') numbers: number[];
