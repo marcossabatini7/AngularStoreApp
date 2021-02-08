@@ -19,12 +19,18 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list'
 import { MatButtonModule } from '@angular/material/button'
 import { MatSnackBarModule } from '@angular/material/snack-bar'
+import { FormsModule } from '@angular/forms'
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
+
 // DIRECTIVES
 import { RedDirective } from './directives/red.directive'
 import { ForDirective } from './directives/for.directive'
 
 // HTTP
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ProductReadComponent } from './components/product/product-read/product-read.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +42,7 @@ import { HttpClientModule } from '@angular/common/http'
     ProductCreateComponent,
     RedDirective,
     ForDirective,
+    ProductReadComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +54,9 @@ import { HttpClientModule } from '@angular/common/http'
     MatCardModule,
     MatButtonModule,
     MatSnackBarModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
     HttpClientModule,
   ],
   providers: [],

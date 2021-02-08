@@ -11,8 +11,8 @@
       "price": 8000
     },
     {
-      "name": "Produto teste qualquer",
-      "price": 10.99,
+      "name": "Notebook",
+      "price": "3000",
       "id": 3
     }
   ]
