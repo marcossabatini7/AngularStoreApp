@@ -9,6 +9,11 @@
       "id": 2,
       "name": "PS5",
       "price": 8000
+    },
+    {
+      "name": "Produto teste qualquer",
+      "price": 10.99,
+      "id": 3
     }
   ]
 }
