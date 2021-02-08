@@ -18,6 +18,7 @@ import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list'
 import { MatButtonModule } from '@angular/material/button'
+import { MatSnackBarModule } from '@angular/material/snack-bar'
 // DIRECTIVES
 import { RedDirective } from './directives/red.directive'
 import { ForDirective } from './directives/for.directive'
@@ -43,6 +44,7 @@ import { ForDirective } from './directives/for.directive'
     MatListModule,
     MatCardModule,
     MatButtonModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
