@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser'
-import { NgModule } from '@angular/core'
+import { NgModule, LOCALE_ID } from '@angular/core'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -35,6 +35,12 @@ import { ForDirective } from './directives/for.directive'
 // HTTP
 import { HttpClientModule } from '@angular/common/http'
 
+// LOCALE
+import localePt from '@angular/common/locales/pt'
+import { registerLocaleData } from '@angular/common'
+
+registerLocaleData(localePt)
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +73,7 @@ import { HttpClientModule } from '@angular/common/http'
     MatPaginatorModule,
     MatSortModule,
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'pt-br' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
